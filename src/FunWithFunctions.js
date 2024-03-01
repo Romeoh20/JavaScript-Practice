@@ -76,7 +76,7 @@ function calculateAreaOfImpossibleShape(length,dimensionCalculator){
 console.log(calculateAreaOfImpossibleShape(32,multiplyByTen));
 
 
-// Defining a one-use-function inside of a high order function
+// Defining one-use-functions inside of  high order functions\
 
 
 let tools = ["drill", "saw", "hammer"];
@@ -88,6 +88,7 @@ function printNumberedItems(items,format){
 
 }
 
+// I am calling the high order function that I defined above and defining a function inside of it at the same time"
 printNumberedItems(tools, function(array){
 
     let result = "";
@@ -96,5 +97,57 @@ printNumberedItems(tools, function(array){
     }
     return result;
 });
+
+// Defining a recursive function
+
+let powerTools = ["drill", "buzz saw", "radial arm saw", "miter saw"];
+let hammers = ["sledge hammer", "mallet", "inflatable hammer"];
+let farmTools = ["pitchfork", "scythe", "cattle prod"]
+
+let ultimateList = [farmTools, hammers, powerTools];
+
+function findRadialArmSaw(powerToolList, index){
+
+
+    if(powerToolList[index] === "radial arm saw"){
+        console.log('RADIAL ARM SAW FOUND AT INDEX ' + index + "!!!!!!!!!")
+        return console.log("YESSSSS")
+    }
+
+    console.log("No radial arm saw found at index " + index + "!!!!!!")
+
+    return findRadialArmSaw(powerToolList,index += 1)
+
+}
+
+// Calling a recursive function 
+// It is basically a loop, lets try a 3 dimensional one
+
+findRadialArmSaw(powerTools,0);
+
+
+function findRadialArmSawInBiggerList(listOfAllTools, index1, index2){
+
+
+    if(listOfAllTools[index1][index2] === "radial arm saw"){
+        return console.log('RADIAL ARM SAW FOUND AT INDEX ' + index1 + ' AND INDEX '  + index2 + '!!!!!!!' )
+    }
+
+    if(listOfAllTools[index1][index2] === undefined){
+        return findRadialArmSawInBiggerList(listOfAllTools, index1+= 1, index2 = 0);
+    }
+
+    console.log('No radial arm saw found at index ' + index1 + ' and index '  + index2)
+
+    return findRadialArmSawInBiggerList(listOfAllTools, index1, index2+= 1)
+
+}
+
+let exampleList = [1,2,3]
+
+console.log(exampleList[3]);
+
+findRadialArmSawInBiggerList(ultimateList,0,0);
+
 
 
