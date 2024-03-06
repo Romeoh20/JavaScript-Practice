@@ -1,10 +1,10 @@
 
-
+//declaring a function to put inside of the person object
 let burp1 = function(){
 
 }
 
-
+// declaring the person object
 let person = {
 
     gender: "male",
@@ -18,6 +18,7 @@ let person = {
     
 };
 
+// declaring the cat object
 let cat = {
 
     color: "black",
@@ -33,6 +34,8 @@ console.log(person.height);
 console.log(person.weight);
 console.log(person.eyeColor);
 
+
+// practice using the for in loop
 for(let key in cat){
     console.log(key +": " + cat[key])
 }
@@ -42,6 +45,7 @@ person.pet = cat;
 console.log("\n");
 console.log("\n");
 
+// more for in loop practice with a bit more complexity
 for(let key in person){
 
     if(typeof(person[key]) === typeof(person.pet) || typeof(person[key]) === typeof(person.screamAtRandomPeople)){
@@ -61,6 +65,8 @@ console.log(typeof(person.burp))
 console.log("\n");
 console.log("\n");
 
+
+// creating an object inside of an object inside of an object 0_0
 let mouse = {
     color: "grey",
     age: 5,
