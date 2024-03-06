@@ -126,6 +126,7 @@ function findRadialArmSaw(powerToolList, index){
 findRadialArmSaw(powerTools,0);
 
 
+// This function is able to through a 3D Array !!
 function findRadialArmSawInBiggerList(listOfAllTools, index1, index2){
 
 
