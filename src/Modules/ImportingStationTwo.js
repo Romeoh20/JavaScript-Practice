@@ -5,7 +5,7 @@ const RLG = require("./ExportationStationTwo");
 // importing a single function
 const RNG = require("./ExportationStationOne");
 
-
+// creating a function from imported functions
 function codeGenerator(RNG, letterGenerator, letterPicker){
 
     let code = [];
