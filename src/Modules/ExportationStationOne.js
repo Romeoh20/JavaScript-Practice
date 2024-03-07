@@ -1,23 +1,19 @@
 
-// Declaring Functions To Be Exported
+// Declaring A  Single Function To Be Exported
 
 function randomNumberGenerator() {
 
-    let randomNumber = Math.ceil(Math.random() * 100);
+    let randomNumber = Math.floor(Math.random() * 10);
 
-    console.log("I will generate a number 1 - 100 0_0\n")
+    //console.log("I will generate a number 1 - 100 0_0\n")
 
-    console.log("GENERATING NUMBER *_*!")
-    console.log("GENERATING NUMBER *_*!")
-    console.log("GENERATING NUMBER *_*!\n")
+    //console.log("GENERATING NUMBER *_*!")
+    //console.log("GENERATING NUMBER *_*!")
+    //console.log("GENERATING NUMBER *_*!\n")
 
-    console.log("Here is your random number: " + randomNumber);
+    //console.log("Here is your random number: " + randomNumber);
 
-}
-
-function randomIndexPicker(arrayLength) {
-
-return randomIndex = Math.floor(Math.random * arrayLength)
+    return randomNumber
 
 }
 
