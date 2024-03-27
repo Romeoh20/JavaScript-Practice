@@ -1,10 +1,11 @@
 {
   "devDependencies": {
     "jasmine": "^5.1.0"
-    
   },
   "scripts": {
     "test": "jasmine"
+  },
+  "dependencies": {
+    "random-js": "^2.1.0"
   }
-  
 }
